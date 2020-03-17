@@ -1,1 +1,95 @@
+#include <iostream>
 
+
+using namespace std;
+
+class Empleado {
+
+   private:
+
+      int edad, sueldo, salario, horasXsemana;
+
+      bool activo;
+
+      static int cantidadEmpleados;
+
+      string nombre, tienda;
+
+   public:
+
+      Empleado();
+
+      Empleado(int e, int s, int sal, int h, string n);
+
+      Empleado(int e, int s, int sal, int h, bool a, string n);
+      
+      int getSalario() const;
+
+      void setSalario(int k) ;
+
+      void cambiartTienda(string tienda);
+
+      void activarEmpleado();
+
+      void desactivarEmpleado(int n);
+
+      int mostrarInformacionEmpleado();
+
+      bool estaActivo();
+
+      int getEdad() const;
+};
+
+int Empleado::getSalario() const{
+    return salario;
+    
+}
+
+void Empleado::setSalario(int k )
+{
+    k = salario;
+}
+
+void Empleado::cambiartTienda(string tienda){
+    tienda="";
+}
+void Empleado::activarEmpleado() 
+{
+    
+}
+void Empleado::desactivarEmpleado(int n){
+    n=0;
+    
+}
+int Empleado::mostrarInformacionEmpleado(){
+    if(true){
+        cout<<"informacion del empleado"<<endl;
+        cout<<"nombre:"<<nombre<<endl;
+        cout<<"edad:"<<edad<<endl;
+        cout<<"activo:"<<activo<<endl;
+        cout<<"salario:"<<salario<<endl;
+        cout<<"tienda:"<<tienda<<endl;   
+        
+    }
+    return 0;
+   
+}
+bool Empleado::estaActivo(){
+    return activo;
+    
+}
+
+int Empleado::getEdad() const{
+    return edad;
+    
+}
+
+
+
+
+
+int main()
+{
+    cout << " " << endl;
+    return 0;
+}
